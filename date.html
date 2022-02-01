@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body style="background-color: cadetblue;">
+
+    <h1 style="text-align: center; font: size 100px;"> webpage to get date</h1>
+
+    <button onclick="getdate()"> press here to know date</button> 
+
+    <h1 id="btn" style= "text-align: center; color: blue; font-size: 100px;"> </h1>
+
+    <script>
+       
+      function getdate(){
+          setInterval(() => {
+              document.getElementById("btn").innerHTML=Date();
+          }, 1000);
+      }
+    </script>
+</body>
+</html>
